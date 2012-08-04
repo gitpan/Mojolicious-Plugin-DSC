@@ -3,7 +3,7 @@ use Mojo::Base 'Mojolicious::Plugin';
 use DBIx::Simple::Class;
 
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 #some known good defaults
 my %COMMON_ATTRIBUTES = (
@@ -76,12 +76,20 @@ sub register {
   for my $sql (@{$config->{onconnect_do}}) {
     $dbix->dbh->do($sql);
   }
+
   $config->{dbix_helper} ||= 'dbix';
   $app->attr($config->{dbix_helper}, sub {$dbix});
   $app->helper($config->{dbix_helper}, $app->dbix);    #add helper dbix
   DBIx::Simple::Class->dbix($app->dbix);               #do not forget
 
+  $self->_load_classes($config);
 
+  $self->config($config);
+  return $self;
+}    #end register
+
+sub _load_classes {
+  my ($self, $config) = @_;
   if ($config->{namespace} && @{$config->{load_classes}}) {
     my @classes   = @{$config->{load_classes}};
     my $namespace = $config->{namespace};
@@ -103,11 +111,7 @@ sub register {
       $MEx->throw($e) if $e;
     }
   }
-  $self->config($config);
-  return $self;
-}    #end register
-
-
+}
 1;
 
 __END__
