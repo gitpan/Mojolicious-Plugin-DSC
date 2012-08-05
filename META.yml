@@ -20,4 +20,4 @@ no_index:
 requires:
   DBIx::Simple::Class: 0.62
   Mojolicious: 2.0
-version: 0.05
+version: 0.06
