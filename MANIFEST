@@ -9,6 +9,8 @@ t/basic.t
 t/lib/My.pm
 t/lib/My/Groups.pm
 t/lib/My/User.pm
+t/lib/Your.pm
+t/lib/Your/User.pm
 t/pod-coverage.t
 t/pod.t
 META.yml                                 Module YAML meta-data (added by MakeMaker)

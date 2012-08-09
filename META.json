@@ -16,7 +16,8 @@
    "no_index" : {
       "directory" : [
          "t",
-         "inc"
+         "inc",
+         "t"
       ]
    },
    "prereqs" : {
@@ -33,10 +34,22 @@
       "runtime" : {
          "requires" : {
             "DBIx::Simple::Class" : "0.62",
-            "Mojolicious" : "2.0"
+            "Mojolicious" : "2.0",
+            "perl" : "5.010001"
          }
       }
    },
    "release_status" : "stable",
-   "version" : "0.06"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/kberov/Mojolicious--Plugin--DSC/issues"
+      },
+      "license" : [
+         "http://www.opensource.org/licenses/artistic-license-2.0"
+      ],
+      "repository" : {
+         "url" : "https://github.com/kberov/Mojolicious--Plugin--DSC"
+      }
+   },
+   "version" : "0.60"
 }
