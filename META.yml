@@ -20,10 +20,10 @@ no_index:
     - t
 requires:
   DBIx::Simple::Class: 0.991
-  Mojolicious: 2.0
+  Mojolicious: 3.85
   perl: 5.010001
 resources:
   bugtracker: https://github.com/kberov/Mojolicious--Plugin--DSC/issues
   license: http://www.opensource.org/licenses/artistic-license-2.0
   repository: https://github.com/kberov/Mojolicious--Plugin--DSC
-version: 0.992
+version: 0.993
