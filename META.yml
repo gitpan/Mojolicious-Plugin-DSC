@@ -26,4 +26,4 @@ resources:
   bugtracker: https://github.com/kberov/Mojolicious--Plugin--DSC/issues
   license: http://www.opensource.org/licenses/artistic-license-2.0
   repository: https://github.com/kberov/Mojolicious--Plugin--DSC
-version: 0.993
+version: 0.994
