@@ -7,7 +7,7 @@ build_requires:
 configure_requires:
   ExtUtils::MakeMaker: 0
 dynamic_config: 1
-generated_by: 'ExtUtils::MakeMaker version 6.62, CPAN::Meta::Converter version 2.112150'
+generated_by: 'ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120921'
 license: artistic_2
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -19,11 +19,11 @@ no_index:
     - inc
     - t
 requires:
-  DBIx::Simple::Class: 0.991
+  DBIx::Simple::Class: 0.995
   Mojolicious: 3.85
   perl: 5.010001
 resources:
   bugtracker: https://github.com/kberov/Mojolicious--Plugin--DSC/issues
   license: http://www.opensource.org/licenses/artistic-license-2.0
   repository: https://github.com/kberov/Mojolicious--Plugin--DSC
-version: 0.995
+version: 0.996
