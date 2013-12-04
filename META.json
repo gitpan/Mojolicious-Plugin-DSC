@@ -33,7 +33,7 @@
       },
       "runtime" : {
          "requires" : {
-            "DBIx::Simple::Class" : "0.996",
+            "DBIx::Simple::Class" : "1.003",
             "Mojolicious" : "3.85",
             "perl" : "5.010001"
          }
@@ -51,5 +51,5 @@
          "url" : "https://github.com/kberov/Mojolicious--Plugin--DSC"
       }
    },
-   "version" : "0.998"
+   "version" : "0.999"
 }
